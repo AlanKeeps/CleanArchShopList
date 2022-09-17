@@ -1,7 +1,8 @@
-package com.example.cleanarchshoplist
+package com.example.cleanarchshoplist.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.cleanarchshoplist.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
