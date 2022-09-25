@@ -1,6 +1,5 @@
 package com.example.cleanarchshoplist.presentation
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.cleanarchshoplist.data.ShopListRepositoryImpl
 import com.example.cleanarchshoplist.domain.DeleteShopItemUseCase

@@ -5,8 +5,9 @@ import com.example.cleanarchshoplist.domain.ShopItem
 
 class ShopListDiffCallback(
     private val oldList: List<ShopItem>,
-    private val newList: List<ShopItem>
+    private val newList: List<ShopItem>,
 ): DiffUtil.Callback() {
+
     override fun getOldListSize(): Int {
         return oldList.size
     }
