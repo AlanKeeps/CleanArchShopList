@@ -1,7 +1,8 @@
 package com.example.cleanarchshoplist.domain
 
-class AddShopItemUseCase {
-    fun addShopItem(shopItem: ShopItem) {
+class AddShopItemUseCase(private val shopListRepository: ShopListRepository) {
 
+    fun addShopItem(shopItem: ShopItem) {
+        shopListRepository.addShopItem(shopItem)
     }
 }
