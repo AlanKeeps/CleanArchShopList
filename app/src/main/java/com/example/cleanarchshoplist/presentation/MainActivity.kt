@@ -1,4 +1,4 @@
-package com.example.cleanarchshoplist.presentaion
+package com.example.cleanarchshoplist.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cleanarchshoplist.R
-import com.example.cleanarchshoplist.domain.ShopItem
 
 class MainActivity : AppCompatActivity() {
 

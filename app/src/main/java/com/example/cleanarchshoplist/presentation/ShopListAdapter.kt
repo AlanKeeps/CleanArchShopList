@@ -1,4 +1,4 @@
-package com.example.cleanarchshoplist.presentaion
+package com.example.cleanarchshoplist.presentation
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
