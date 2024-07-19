@@ -42,7 +42,7 @@ class ShopItemViewModel(application: Application) : AndroidViewModel(application
 
     fun getShopItem(shopItemId: Int) {
         scope.launch {
-            val item = getShopItemUseCase.getShopItemId(shopItemId)
+            val item = getShopItemUseCase.getShopItem(shopItemId)
             _shopItem.value = item
         }
     }

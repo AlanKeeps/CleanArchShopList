@@ -26,7 +26,7 @@ class ShopListRepositoryImpl(application: Application) : ShopListRepository {
         shopListDao.addShopItem(mapper.mapEntityToDbModel(shopItem))
     }
 
-    override suspend fun getShopItemId(shopItemId: Int): ShopItem {
+    override suspend fun getShopItem(shopItemId: Int): ShopItem {
         val dbModel = shopListDao.getShopItem(shopItemId)
         return mapper.mapDbModelToEntity(dbModel)
     }
