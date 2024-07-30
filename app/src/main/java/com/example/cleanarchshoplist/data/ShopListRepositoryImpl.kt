@@ -1,18 +1,15 @@
 package com.example.cleanarchshoplist.data
 
-import android.app.Application
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MediatorLiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import com.example.cleanarchshoplist.domain.ShopItem
 import com.example.cleanarchshoplist.domain.ShopListRepository
-import kotlin.random.Random
+import javax.inject.Inject
 
-class ShopListRepositoryImpl(application: Application) : ShopListRepository {
-
-    private val shopListDao = AppDatabase.getInstance(application).shopListDao()
-    private val mapper = ShopListMapper()
+class ShopListRepositoryImpl @Inject constructor(
+    private val shopListDao: ShopListDao,
+    private val mapper: ShopListMapper
+) : ShopListRepository {
 
     override suspend fun addShopItem(shopItem: ShopItem) {
         shopListDao.addShopItem(mapper.mapEntityToDbModel(shopItem))

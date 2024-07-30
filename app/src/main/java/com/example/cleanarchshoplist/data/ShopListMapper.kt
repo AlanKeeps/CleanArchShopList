@@ -1,8 +1,9 @@
 package com.example.cleanarchshoplist.data
 
 import com.example.cleanarchshoplist.domain.ShopItem
+import javax.inject.Inject
 
-class ShopListMapper {
+class ShopListMapper @Inject constructor() {
 
     fun mapEntityToDbModel(shopItem: ShopItem) = ShopItemDbModel(
         id = shopItem.id,
